@@ -1,0 +1,123 @@
+/* Reset default margin, padding, and set box sizing for consistent layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d2deea; 
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Heading styles */
+h1 {
+    color: #4d0be6;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #2f17e5; 
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; 
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Navbar Logo styling */
+.navbar .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: hsl(66, 95%, 50%); 
+}
+
+/* Navbar links list */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+/* Individual list items */
+.nav-links li {
+    margin: 0;
+}
+
+/* Anchor tags inside navbar */
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    padding: 8px 16px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+}
+
+/* Hover effect on navbar links */
+.nav-links li a:hover {
+    background-color: #e3640f; 
+    color: #fff;
+}
+
+/* Section Styling */
+.section {
+    padding: 100px 20px;
+    margin-top: 70px; 
+    text-align: center;
+    background-color: #f2f6fa; 
+    margin-bottom: 20px;
+    color: #333; 
+}
+
+/* Alternate section background for visual separation */
+section:nth-child(even) {
+    background-color: #d0e7f9; 
+}
+
+/* Paragraphs inside sections */
+section p {
+    text-align: left;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Highlighted strong text */
+section strong {
+    color: #6b47dc; 
+}
+
+/* Footer Styling */
+footer {
+    background-color: #112240; 
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
